@@ -17,7 +17,7 @@ function elemekElerese1() {
 }
 function elemekElerese2() {
     const ELEM=document.getElementByID("ide")
-    p.push("Jó reggelt!")
+    let html = document.getElementById("p").innerHTML; 
     const p = "Jó reggelt!";
     //**+kiirtam */
     console.log("p")
