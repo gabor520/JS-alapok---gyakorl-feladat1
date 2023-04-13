@@ -1,8 +1,9 @@
 window.addEventListener("load", function () {
-  elemekElerese1();
-  elemekElerese2();
-  elemekElerese3();
-  elemekFormazasa1();
+  /* elemekElerese1(); */
+/*   elemekElerese2(); */
+    elemekElerese3();
+  elemekElerese4();
+/*   elemekFormazasa1(); */
 });
 
 function elemekElerese1() {
@@ -15,13 +16,23 @@ function elemekElerese1() {
 }
 function elemekElerese2() {
   const ELEM = document.getElementByID("ide");
-  let html = <p>Idegdfeh</p>;
+  let html = "<p>Idegdfeh</p>";
   ELEM.innerHTML=html
   //**+kiirtam */
-  console.log("html");
+  console.log(html);
 }
-function elemekElerese3() {
-  const ELEM = document.getElementsByClassName("lista");
+
+function elemekElerese3(){
+    const ELEM=document.getElementsByClassName("ide")[0];
+    console.log("hahó");
+    ELEM.innerHTML += "<p>Jó reggelt</p>";
+
+}
+
+
+
+function elemekElerese4() {
+  const ELEM = document.getElementsByClassName("lista")[0];
   Math.floor(Math.random() * 30) + 10;
   /**Ide jön az 3. feladat */
   const a = [
@@ -35,6 +46,7 @@ function elemekElerese3() {
     r.push(a[i]);
     a[i] = a[30 - n];
   }
+  ELEM.innerHTML += 
 }
 function elemekFormazasa1() {
   const ELEM = document.querySelectorAll("formazott");
@@ -47,4 +59,4 @@ const ELEM2 = document.getElementById("kattintasutan").innerHTML;
 });
 
 const ELEM = document.querySelectorAll("feladat");
-document.addEventListener("click", myFunction);
+/* document.addEventListener("click", myFunction); */
